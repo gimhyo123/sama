@@ -1,0 +1,27 @@
+aside {
+    width: 250px;
+    display: flex;
+    flex-flow: column;
+    gap: 30px;
+}
+ aside header {
+    border: 1px solid rgb(247, 5, 5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+aside ul {
+    border: 1px solid red;
+    border-radius: 15px;
+}
+aside li{
+    list-style: none;
+    padding: 15px;
+}
+
+aside li.selected{
+    background-color: rgb(216, 216, 216);
+}
