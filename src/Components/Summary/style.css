@@ -1,12 +1,10 @@
-.summary{
-    border:  1px solid red;
-    padding: 15px;
-}
+
 
 .summary ul {
-    display: flex ;
-  justify-content: space-around;
+    display: flex;
+    justify-content: space-around;
 }
+
 .summary ul li {
     display: flex;
     flex-flow: column;
