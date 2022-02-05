@@ -10,16 +10,14 @@ aside header {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 aside li {
     list-style: none;
     padding: 15px;
-  
 }
 
-aside .selected li {
+aside .selected li{
     background-color: rgb(216, 216, 216);
 }
 
@@ -29,5 +27,5 @@ aside a {
 }
 
 aside li:hover {
-    background-color: rgb(216, 216, 216);
+    background-color: rgb(216,216,216);
 }

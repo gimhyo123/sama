@@ -19,21 +19,21 @@ const Sidebar = () => {
             <ul>
                 <NavLink to="/" className={({
                     isActive
-                }) => isActive ? 'selected': ''}>
+                }) => isActive ? 'selected' : ''}>
                     <li>
                         국내
                     </li>
                 </NavLink>
                 <NavLink to="/world" className={({
                     isActive
-                }) => isActive ? 'selected': ''}>
+                }) => isActive ? 'selected' : ''}>
                     <li>
                         해외
                     </li>
                 </NavLink>
-                <NavLink to="/vaccine"className={({
+                <NavLink to="/vaccine" className={({
                     isActive
-                }) => isActive ? 'selected': ''}>
+                }) => isActive ? 'selected' : ''}>
                     <li>
                         백신
                     </li>

@@ -8,7 +8,7 @@ import TodaySummary from "../../Components/TodaySummary"
 const Korea = () => {
 return (
     <>
-    Korea 
+    
     <Summary/>
     <TodaySummary/>
     </>
