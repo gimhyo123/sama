@@ -1,23 +1,13 @@
-
-import { useCallback, useEffect, useState } from "react";
-import { httpGetSummary } from "../../httpApI";
+import { FunctionComponent, useCallback, useEffect, useState } from "react";
 import formatNumber from "../../utils/formatNumber";
 import Box from "../Box";
 import "./style.css";
 
-const Summary = () => {
-  const [summary, setSummary] = useState<SummaryType>();
+interface Props {
+  summary?: SummaryType
+}
 
-  const getSummary = useCallback(async () => {
-    const summary = await httpGetSummary();
-
-    setSummary(summary);
-  }, []);
-
-  useEffect(() => {
-    getSummary();
-  }, []);
-
+const Summary: FunctionComponent<Props> = ({summary}) => {
   return (
     <Box isPadding>
       <article className="summary">
