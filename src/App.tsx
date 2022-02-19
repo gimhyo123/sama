@@ -1,7 +1,8 @@
 import { Route, Routes } from 'react-router-dom';
 import Sidebar from './Components/Sidebar/Sidebar';
 import "./index.css"
-import Korea from './pages/Korea';
+import Korea from './pages/World';
+import World from './pages/World';
 
 function App() {
 
