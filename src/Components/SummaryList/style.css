@@ -13,10 +13,16 @@
 
 .summary-list thead th span {
     font-size: 18px;
+    position: absolute;
 }
 
 
 .summary-list tbody tr {
+    height: 40px;
+}
+
+.summary-list tbody td {
+    font-weight: bold;
     font-size:13px;
     text-align: center;
 }
