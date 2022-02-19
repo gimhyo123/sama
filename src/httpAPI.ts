@@ -12,10 +12,8 @@ const httpClient = axios.create({
 export const httpGetSummary = async (): Promise<SummaryType> => {
   const { data } = await httpClient.get("/korea/beta/");
 
-  
+  const { korea, API, quarantine, ...cities  } = data
 
-  const { korea,API,  gurantine, ...cities} = data
-  
   return {
     ...korea,
     deathPcnt: API.deathPcnt,
@@ -24,3 +22,8 @@ export const httpGetSummary = async (): Promise<SummaryType> => {
   };
 };
 
+export const httpGetVaccineSummary = async () : Promise<VaccineSummaryType> => {
+  const { data } = await httpClient.get('/korea/vaccine/');
+
+  return data.korea
+}
